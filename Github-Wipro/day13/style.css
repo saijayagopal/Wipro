@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f8f6;
+  text-align: center;
+}
+
+/* Header Section */
+.header {
+  background-color: #00796b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* Menu Bar */
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #00796b;
+}
+
+/* Student Section */
+.student {
+  background-color: #e0f2f1;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #00796b;
+}
+
+/* Student Image */
+.photo {
+  width: 200px;
+  border-radius: 10px;
+  border: 3px solid #00796b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+/* Hide checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Hide details by default */
+.info {
+  display: none;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #00796b;
+  text-align: left;
+}
+
+/* Show info when checkbox checked */
+input[type="checkbox"]:checked + label + p + .info {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: lightslategray;
+  padding: 12px;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .menu a {
+    margin: 5px;
+    display: inline-block;
+  }
+}
