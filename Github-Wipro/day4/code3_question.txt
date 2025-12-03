@@ -1,0 +1,3 @@
+Bicycle and mountain bike
+your task is to implement two classes as shown in the diagram
+
