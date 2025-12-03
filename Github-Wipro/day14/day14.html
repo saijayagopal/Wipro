@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random User</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+             background-image: url("background.jpg");  
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            width: 260px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+        #btn {
+            padding: 10px 20px;
+            background: dodgerblue;   /* color name */
+            border: none;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        #btn:hover {
+            background: mediumblue;  /* color name */
+        }
+        #user img {
+            width: 90px;
+            margin-top: 15px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h3>Get Random User</h3>
+    <button id="btn">Click</button>
+    <div id="user"></div>
+</div>
+
+<script src="day14.js"></script>
+</body>
+</html>
